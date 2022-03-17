@@ -1,0 +1,83 @@
+
+@charset "UTF-8";
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: #666666;
+}
+#container{
+  width: 700px;
+  height: 1000px;
+  margine:0px auto 0px auto;
+  background-color: #ffffff;
+  border-left: 5px solid #ff9933;
+  border-right: 5px solid #ff9933;
+}
+
+header{
+  height:400px;
+  background-image: url(mask.png);
+}
+#header-title{
+  color: ff4433;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding-left: 15px;
+  padding-top: 345px;
+}
+nav ul{
+  list-style-type: none;
+  background: linear-gradient(#ff9933,#723b0e);
+  display: flex;
+}
+nav a{
+  display: block;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  width: 140px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: bold;
+  line-height: 20px;
+  font-family: sans-serif;
+
+}
+nav a:hover{
+  background: linear-gradient(#ff3300,#7f1700);
+}
+main {
+  height: 500px;
+  padding: 30px;
+
+}
+main h1{
+   background-color: #ff6633;
+  border-left: solid 15px #ff3399;
+  padding: 1px 10px 1px 10px;
+  border-radius: 5px;
+  margin: 20px;
+
+
+}
+main h2{
+  background-color: #ff6633;
+  border-left: solid 15px #ff3399;
+  padding: 1px 10px 1px 10px;
+  border-radius: 5px;
+  margin: 20px;
+}
+main p{
+  margin: 30px;
+}
+footer{
+  background-color: #9933ff;
+  padding: 10px;
+  font-size: 12px;
+  font-family: sans-serif;
+  text-align: right;
+  color: #ffffff;
+}

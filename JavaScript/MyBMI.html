@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BMI</title>
+  </head>
+  <body>
+    <h1>JavaScript(if and else)</h1>
+    <h2>BMI計算</h2>
+    <table>
+      <tr>
+        <th>身長</th>
+        <td>
+        <input type="text" id="num1"></td>
+        <td>m</td>
+      </tr>
+      <tr>
+      <th>体重</th>
+      <td>
+      <input type="text"  id="num2"></td>
+      <td>KG</td>
+      </tr>
+      <tr>
+        <th colspan="3">
+        <button onclick="bmi();">BMI計算</button></th>
+      </tr>
+      <tr>
+        <th>BMI</th>
+        <td id="bmiscore"></td>
+        <td id="bmicomment"></td>
+      </tr>
+    </table>
+    <script type="text/javascript">
+      function bmi(){
+      var myH;
+      var myW;
+      var myBMI;
+      var myBMIComment;
+      myH=document.getElementById('num1').value;
+      myW=document.getElementById('num2').value;
+
+      myBMI=myW/(myH*myH);
+
+      document.getElementById('bmiscore').innerHTML=myBMI;
+
+      if(myBMI>30){
+        myBMIComment='BAD';
+      }
+      else if (myBMI>25) {
+        myBMIComment=' WARNING.....';
+
+      }else {
+        myBMIComment='GOOD';
+      }
+      document.getElementById('bmicomment').innerHTML=myBMIComment;
+    }
+    </script>
+
+  </body>
+</html>
